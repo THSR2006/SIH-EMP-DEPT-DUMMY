@@ -1,0 +1,150 @@
+/* =========================================================
+   RESPONSIVE LAYOUT
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .container,
+  .top-strip-inner,
+  .site-header-inner,
+  .site-footer-inner {
+    width: min(100% - 32px, 1280px);
+  }
+
+  .grid,
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .top-strip-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-header-inner {
+    min-height: 118px;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .site-nav a {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .grid,
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    padding: 3rem 0;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+  .container,
+  .top-strip-inner,
+  .site-header-inner,
+  .site-footer-inner {
+    width: calc(100% - 22px);
+  }
+
+
+  /* Header */
+
+  .top-strip-inner {
+    gap: 0.25rem;
+  }
+
+  .site-header-inner {
+    min-height: 118px;
+  }
+
+  .brand-title {
+    font-size: 1.2rem;
+  }
+
+  .brand-subtitle {
+    max-width: 230px;
+    line-height: 1.3;
+  }
+
+
+  /* Navigation */
+
+  .site-nav {
+    gap: 0.15rem;
+  }
+
+  .site-nav a {
+    padding: 0.45rem 0.5rem;
+    font-size: 13px;
+  }
+
+
+  /* General grids */
+
+  .grid,
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Hero */
+
+  .hero {
+    padding: 2.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+
+  /* Footer */
+
+  .site-footer-inner {
+    flex-direction: column;
+  }
+
+
+  /* Key/value layouts */
+
+  .kv {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+
+  .kv dd {
+    margin-bottom: 0.5rem;
+  }
+}

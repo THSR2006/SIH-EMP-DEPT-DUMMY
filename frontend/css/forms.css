@@ -1,0 +1,847 @@
+/* =========================================================
+   FORM LAYOUT
+   ========================================================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem 1.5rem;
+}
+
+.form-field {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-field.full {
+  grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+.form-field label {
+  font: 600 14px/1.4 Arial, sans-serif;
+  color: var(--navy);
+}
+
+.form-field label span {
+  color: #b54708;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 44px;
+
+  border: 1px solid #aebdca;
+  border-radius: 3px;
+
+  background: #fff;
+  color: var(--ink);
+
+  padding: 0.65rem 0.75rem;
+
+  font: 15px/1.4 Arial, sans-serif;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.form-field textarea {
+  min-height: 96px;
+  resize: vertical;
+  padding-top: 0.7rem;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+
+  border-color: var(--blue);
+
+  box-shadow:
+    0 0 0 2px rgba(20, 76, 120, 0.12);
+}
+
+.form-field input[readonly] {
+  background: #f3f5f7;
+  color: #536576;
+  cursor: default;
+}
+
+
+/* =========================================================
+   APPLICATION PAGE
+   ========================================================= */
+
+.application-panel {
+  padding: 0;
+  overflow: hidden;
+}
+
+.application-intro {
+  padding: 1.6rem 1.6rem 1.35rem;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.application-intro h2 {
+  margin: 0 0 0.35rem;
+  color: var(--navy);
+  font-size: 1.25rem;
+}
+
+.application-intro p {
+  margin: 0;
+}
+
+
+/* =========================================================
+   FORM SECTIONS
+   ========================================================= */
+
+.form-section {
+  padding: 1.65rem 1.6rem;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.form-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+
+  margin-bottom: 1.35rem;
+}
+
+.form-section-heading h3 {
+  margin: 0 0 0.25rem;
+  color: var(--navy);
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.form-section-heading p {
+  margin: 0;
+  color: var(--muted);
+  font: 13px/1.5 Arial, sans-serif;
+}
+
+
+/* Number shown beside each section */
+
+.section-number {
+  flex: 0 0 30px;
+
+  width: 30px;
+  height: 30px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--blue);
+  color: #fff;
+
+  border-radius: 50%;
+
+  font: 700 13px Arial, sans-serif;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+   ========================================================= */
+
+.file-box {
+  box-sizing: border-box;
+
+  padding: 1rem;
+
+  border: 1px dashed #9eafbf;
+  border-radius: 3px;
+
+  background: #f7f9fb;
+}
+
+.file-box input[type="file"] {
+  min-height: auto;
+  padding: 0.55rem;
+
+  background: #fff;
+}
+
+.form-help {
+  color: var(--muted);
+  font: 12px/1.5 Arial, sans-serif;
+}
+
+
+/* =========================================================
+   ELIGIBILITY SECTION
+   ========================================================= */
+
+.eligibility-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  padding: 1.25rem 1.6rem;
+
+  background: #f5f8fa;
+  border-bottom: 1px solid var(--line);
+}
+
+.eligibility-section h3 {
+  margin: 0 0 0.25rem;
+
+  color: var(--navy);
+  font-size: 15px;
+}
+
+.eligibility-section p {
+  margin: 0;
+
+  color: var(--muted);
+  font: 13px/1.45 Arial, sans-serif;
+}
+
+
+/* =========================================================
+   FORM ACTIONS
+   ========================================================= */
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 0.75rem;
+
+  padding: 1.25rem 1.6rem;
+
+  background: #fff;
+  border-top: 1px solid var(--line);
+}
+
+.form-actions .btn {
+  min-width: 150px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+
+  padding: 0.65rem 1.1rem;
+
+  border: 1px solid transparent;
+  border-radius: 3px;
+
+  font: 600 14px/1 Arial, sans-serif;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.05s ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: #d97925;
+  border-color: #d97925;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #bd6418;
+  border-color: #bd6418;
+}
+
+.btn-secondary {
+  background: #fff;
+  border-color: #b8c5d1;
+  color: var(--navy);
+}
+
+.btn-secondary:hover {
+  background: #f3f6f8;
+  border-color: #8fa1b1;
+}
+
+
+/* =========================================================
+   VALIDATION / MESSAGES
+   ========================================================= */
+
+.form-field input:invalid:not(:placeholder-shown),
+.form-field select:invalid:not(:placeholder-shown),
+.form-field textarea:invalid:not(:placeholder-shown) {
+  /* Intentionally subtle.
+     Browser validation remains available without
+     making the form visually aggressive. */
+}
+
+#eligibility-result {
+  padding: 0 1.6rem;
+}
+
+#app-message {
+  margin-bottom: 1rem;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid rgba(217, 121, 37, 0.3);
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   OTHER FORM COMPONENTS
+   ========================================================= */
+
+.hidden {
+  display: none !important;
+}
+
+.radio-card {
+  display: block;
+
+  height: 100%;
+  padding: 1.25rem;
+
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.radio-card:has(input:checked) {
+  border-color: var(--blue);
+  background: var(--blue-soft);
+}
+
+.radio-card input {
+  margin-right: 0.5rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .form-field.full {
+    grid-column: auto;
+  }
+
+  .form-section {
+    padding: 1.3rem 1rem;
+  }
+
+  .application-intro {
+    padding: 1.3rem 1rem;
+  }
+
+  .eligibility-section {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.2rem 1rem;
+  }
+
+  .eligibility-section .btn {
+    width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding: 1.1rem 1rem;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+
+  #eligibility-result {
+    padding: 0 1rem;
+  }
+}
+
+/* =========================================================
+   JOB SEARCH
+   ========================================================= */
+
+.job-search-panel {
+  margin-bottom: 1.5rem;
+}
+
+.search-heading {
+  margin-bottom: 1.25rem;
+}
+
+.search-heading h2 {
+  margin: 0 0 0.25rem;
+  color: var(--navy-deep);
+  font-size: 1.15rem;
+}
+
+.search-heading p {
+  margin: 0;
+  font: 13px/1.5 Arial, sans-serif;
+}
+
+.job-search-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+}
+
+.job-search-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  margin-top: 1.25rem;
+  padding-top: 1.1rem;
+
+  border-top: 1px solid var(--line);
+}
+
+.job-search-actions .btn {
+  min-width: 145px;
+}
+
+
+/* =========================================================
+   JOB CARDS
+   ========================================================= */
+
+.jobs-grid {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   JOB SEARCH RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .job-search-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-search-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .job-search-actions .btn {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   TRACK APPLICATION
+   ========================================================= */
+
+.tracking-panel {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tracking-intro {
+  padding: 1.5rem 1.6rem 1.25rem;
+
+  border-bottom: 1px solid var(--line);
+
+  background: #fff;
+}
+
+.tracking-intro h2 {
+  margin: 0 0 0.3rem;
+
+  color: var(--navy-deep);
+
+  font-size: 1.2rem;
+}
+
+.tracking-intro p {
+  margin: 0;
+
+  font: 13px/1.5 Arial, sans-serif;
+}
+
+.tracking-form-row {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  align-items: end;
+
+  gap: 1.25rem;
+
+  padding: 1.5rem 1.6rem;
+
+  background: #fff;
+}
+
+.tracking-action {
+  padding-bottom: 20px;
+}
+
+.tracking-action .btn {
+  min-width: 165px;
+}
+
+.tracking-result {
+  max-width: 900px;
+  margin: 1.25rem auto 0;
+}
+
+
+/* =========================================================
+   TRACKING RESULT COMPONENTS
+   ========================================================= */
+
+.tracking-result .panel {
+  margin-top: 0;
+}
+
+.tracking-result .alert {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   TRACKING RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .tracking-form-row {
+    grid-template-columns: 1fr;
+
+    padding: 1.25rem 1rem;
+  }
+
+  .tracking-intro {
+    padding: 1.25rem 1rem;
+  }
+
+  .tracking-action {
+    padding-bottom: 0;
+  }
+
+  .tracking-action .btn {
+    width: 100%;
+  }
+
+  .tracking-result {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   TRACKING RESULT
+   ========================================================= */
+
+.tracking-loading {
+  margin-top: 1.25rem;
+}
+
+
+.tracking-result-panel {
+  padding: 0;
+  overflow: hidden;
+}
+
+
+/* Result header */
+
+.tracking-result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding: 1.4rem 1.6rem;
+
+  background: #fff;
+
+  border-bottom: 1px solid var(--line);
+}
+
+<<<<<<< HEAD
+.tracking-result-panel {
+  width: 100%;
+}
+
+=======
+>>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
+
+.tracking-label {
+  display: block;
+
+  margin-bottom: 0.2rem;
+
+  color: var(--muted);
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+
+.tracking-result-header h2 {
+  margin: 0;
+
+  color: var(--navy-deep);
+
+  font-size: 1.35rem;
+<<<<<<< HEAD
+  overflow-wrap: anywhere;
+}
+
+.tracking-result-header .badge {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(11, 34, 54, 0.58);
+}
+
+.submission-modal {
+  width: 100%;
+  max-width: 30rem;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(11, 34, 54, 0.24);
+  text-align: center;
+}
+
+.submission-modal h2 {
+  margin: 0 0 0.6rem;
+  color: var(--navy-deep);
+}
+
+.submission-modal p {
+  margin: 0 0 1rem;
+}
+
+.modal-check {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.tracker-id {
+  display: grid;
+  gap: 0.35rem;
+  margin: 1.25rem 0;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  background: #f7f9fb;
+}
+
+.tracker-id span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tracker-id strong {
+  overflow-wrap: anywhere;
+  color: var(--navy);
+  font-size: 1.1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+=======
+>>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
+}
+
+
+/* Details */
+
+.tracking-details {
+  padding: 1.5rem 1.6rem;
+}
+
+
+.tracking-details-heading {
+  margin-bottom: 1rem;
+
+  padding-bottom: 0.65rem;
+
+  border-bottom: 1px solid var(--line);
+}
+
+
+.tracking-details-heading h3 {
+  margin: 0;
+
+  color: var(--navy-deep);
+
+  font-size: 1.05rem;
+}
+
+
+/* Key/value layout */
+
+.tracking-details .kv {
+  grid-template-columns: minmax(140px, 190px) 1fr;
+
+  gap: 0.8rem 1.5rem;
+}
+
+
+.tracking-details .kv dt {
+  padding-top: 0.05rem;
+}
+
+
+.tracking-details .kv dd {
+  min-width: 0;
+}
+
+
+/* Verification notice */
+
+.tracking-notice {
+  margin: 0 1.6rem 1.5rem;
+
+  padding: 1rem 1.1rem;
+
+  border-left: 4px solid var(--blue);
+
+  background: var(--blue-soft);
+}
+
+
+.tracking-notice strong {
+  display: block;
+
+  margin-bottom: 0.2rem;
+
+  color: var(--navy);
+}
+
+
+.tracking-notice p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font: 13px/1.5 Arial, sans-serif;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .tracking-result-header {
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 1.2rem 1rem;
+  }
+
+
+  .tracking-details {
+    padding: 1.2rem 1rem;
+  }
+
+
+  .tracking-details .kv {
+    grid-template-columns: 1fr;
+
+    gap: 0.15rem;
+  }
+
+
+  .tracking-details .kv dd {
+    margin-bottom: 0.75rem;
+  }
+
+
+  .tracking-notice {
+    margin: 0 1rem 1.2rem;
+  }
+
+}

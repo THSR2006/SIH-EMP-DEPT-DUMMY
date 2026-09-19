@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:tns="http://employment.gov.in/interop/v1"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+                  targetNamespace="http://employment.gov.in/interop/v1"
+                  name="EmploymentDepartmentService">
+
+  <!-- ================= XML SCHEMA TYPES ================= -->
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://employment.gov.in/interop/v1" elementFormDefault="qualified">
+
+      <!-- Citizen Type -->
+      <xsd:complexType name="CitizenDetailsType">
+        <xsd:sequence>
+          <xsd:element name="AadhaarNumber" type="xsd:string"/>
+          <xsd:element name="FullName" type="xsd:string"/>
+          <xsd:element name="FatherName" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="DateOfBirth" type="xsd:string"/>
+          <xsd:element name="Gender" type="xsd:string"/>
+          <xsd:element name="Email" type="xsd:string"/>
+          <xsd:element name="Phone" type="xsd:string"/>
+          <xsd:element name="Address" type="xsd:string"/>
+          <xsd:element name="PinCode" type="xsd:string"/>
+          <xsd:element name="HighestQualification" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+
+      <!-- Education Dept Skill Certificate Verification Type -->
+      <xsd:complexType name="EducationDeptVerificationType">
+        <xsd:sequence>
+          <xsd:element name="CertificateNumber" type="xsd:string"/>
+          <xsd:element name="CourseName" type="xsd:string"/>
+          <xsd:element name="IssuingAuthority" type="xsd:string"/>
+          <xsd:element name="IssueDate" type="xsd:string"/>
+          <xsd:element name="Grade" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="Status" type="xsd:string"/>
+          <xsd:element name="VerifiedHash" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CertificateFileName" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CertificateMimeType" type="xsd:string" minOccurs="0"/>
+          <xsd:element name="CertificatePdfBase64" type="xsd:base64Binary" minOccurs="0"/>
+        </xsd:sequence>
+      </xsd:complexType>
+
+      <!-- Operation 1: GetAvailableJobs -->
+      <xsd:element name="GetAvailableJobsRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Category" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="Status" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="AgeGreaterThan" type="xsd:int" minOccurs="0"/>
+            <xsd:element name="ExperienceLessThan" type="xsd:decimal" minOccurs="0"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetAvailableJobsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="TotalCount" type="xsd:int"/>
+            <xsd:element name="AppliedFilters" type="xsd:anyType" minOccurs="0"/>
+            <xsd:element name="JobsList" type="xsd:anyType"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <!-- Operation 2: CheckEligibility -->
+      <xsd:element name="CheckEligibilityRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="JobId" type="xsd:string"/>
+            <xsd:element name="Citizen" type="tns:CitizenDetailsType"/>
+            <xsd:element name="EducationDeptVerification" type="tns:EducationDeptVerificationType" minOccurs="0"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="CheckEligibilityResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Eligible" type="xsd:boolean"/>
+            <xsd:element name="CalculatedAge" type="xsd:int" minOccurs="0"/>
+            <xsd:element name="Reasons" type="xsd:string" minOccurs="0"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <!-- Operation 3: ApplyForJob (Main Interoperability Action) -->
+      <xsd:element name="ApplyForJobRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="JobId" type="xsd:string"/>
+            <xsd:element name="Citizen" type="tns:CitizenDetailsType"/>
+            <xsd:element name="EducationDeptVerification" type="tns:EducationDeptVerificationType"/>
+            <xsd:element name="ApplicationSource" type="xsd:string" default="SSO_INTEROPERABILITY_GATEWAY"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="ApplyForJobResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Status" type="xsd:string"/>
+            <xsd:element name="ApplicationNumber" type="xsd:string"/>
+            <xsd:element name="JobId" type="xsd:string"/>
+            <xsd:element name="JobTitle" type="xsd:string"/>
+            <xsd:element name="CandidateName" type="xsd:string"/>
+            <xsd:element name="MaskedAadhaar" type="xsd:string"/>
+            <xsd:element name="SkillCertificateVerified" type="xsd:boolean"/>
+            <xsd:element name="CertificatePdfReceived" type="xsd:boolean" minOccurs="0"/>
+            <xsd:element name="CertificateFileName" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="SubmissionTimestamp" type="xsd:string"/>
+            <xsd:element name="Mode" type="xsd:string"/>
+            <xsd:element name="Message" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <!-- Operation 4: GetApplicationStatus -->
+      <xsd:element name="GetApplicationStatusRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ApplicationNumber" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetApplicationStatusResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Found" type="xsd:boolean"/>
+            <xsd:element name="ApplicationNumber" type="xsd:string"/>
+            <xsd:element name="Status" type="xsd:string"/>
+            <xsd:element name="JobTitle" type="xsd:string"/>
+            <xsd:element name="CandidateName" type="xsd:string"/>
+            <xsd:element name="SubmissionMode" type="xsd:string"/>
+            <xsd:element name="AppliedAt" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <!-- Operation 5: GetCitizenByAadhaar (For Master Website SSO Query) -->
+      <xsd:element name="GetCitizenByAadhaarRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="AadhaarNumber" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="GetCitizenByAadhaarResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Found" type="xsd:boolean"/>
+            <xsd:element name="AadhaarNumber" type="xsd:string"/>
+            <xsd:element name="RegistrationNumber" type="xsd:string"/>
+            <xsd:element name="FullName" type="xsd:string"/>
+            <xsd:element name="FatherName" type="xsd:string"/>
+            <xsd:element name="DateOfBirth" type="xsd:string"/>
+            <xsd:element name="Gender" type="xsd:string"/>
+            <xsd:element name="Category" type="xsd:string"/>
+            <xsd:element name="HighestQualification" type="xsd:string"/>
+            <xsd:element name="EmploymentStatus" type="xsd:string"/>
+            <xsd:element name="SkillCertificateNumber" type="xsd:string"/>
+            <xsd:element name="SkillCertificateCourse" type="xsd:string"/>
+            <xsd:element name="SkillCertificateVerified" type="xsd:boolean"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+    </xsd:schema>
+  </wsdl:types>
+
+  <!-- ================= MESSAGES ================= -->
+  <wsdl:message name="GetAvailableJobsInput">
+    <wsdl:part name="parameters" element="tns:GetAvailableJobsRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetAvailableJobsOutput">
+    <wsdl:part name="parameters" element="tns:GetAvailableJobsResponse"/>
+  </wsdl:message>
+
+  <wsdl:message name="CheckEligibilityInput">
+    <wsdl:part name="parameters" element="tns:CheckEligibilityRequest"/>
+  </wsdl:message>
+  <wsdl:message name="CheckEligibilityOutput">
+    <wsdl:part name="parameters" element="tns:CheckEligibilityResponse"/>
+  </wsdl:message>
+
+  <wsdl:message name="ApplyForJobInput">
+    <wsdl:part name="parameters" element="tns:ApplyForJobRequest"/>
+  </wsdl:message>
+  <wsdl:message name="ApplyForJobOutput">
+    <wsdl:part name="parameters" element="tns:ApplyForJobResponse"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetApplicationStatusInput">
+    <wsdl:part name="parameters" element="tns:GetApplicationStatusRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetApplicationStatusOutput">
+    <wsdl:part name="parameters" element="tns:GetApplicationStatusResponse"/>
+  </wsdl:message>
+
+  <wsdl:message name="GetCitizenByAadhaarInput">
+    <wsdl:part name="parameters" element="tns:GetCitizenByAadhaarRequest"/>
+  </wsdl:message>
+  <wsdl:message name="GetCitizenByAadhaarOutput">
+    <wsdl:part name="parameters" element="tns:GetCitizenByAadhaarResponse"/>
+  </wsdl:message>
+
+  <!-- ================= PORT TYPE ================= -->
+  <wsdl:portType name="EmploymentDepartmentPortType">
+    <wsdl:operation name="GetAvailableJobs">
+      <wsdl:documentation>Query government job postings using optional category, status, minimum age, and required experience filters</wsdl:documentation>
+      <wsdl:input message="tns:GetAvailableJobsInput"/>
+      <wsdl:output message="tns:GetAvailableJobsOutput"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="CheckEligibility">
+      <wsdl:documentation>Pre-evaluate citizen eligibility based on DOB, qualification and skill certificate</wsdl:documentation>
+      <wsdl:input message="tns:CheckEligibilityInput"/>
+      <wsdl:output message="tns:CheckEligibilityOutput"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="ApplyForJob">
+      <wsdl:documentation>Submit verified job application via Interoperability Gateway with WS-Security</wsdl:documentation>
+      <wsdl:input message="tns:ApplyForJobInput"/>
+      <wsdl:output message="tns:ApplyForJobOutput"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetApplicationStatus">
+      <wsdl:documentation>Track submitted application status</wsdl:documentation>
+      <wsdl:input message="tns:GetApplicationStatusInput"/>
+      <wsdl:output message="tns:GetApplicationStatusOutput"/>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetCitizenByAadhaar">
+      <wsdl:documentation>Fetch registered citizen profile and skill certificate by Aadhaar</wsdl:documentation>
+      <wsdl:input message="tns:GetCitizenByAadhaarInput"/>
+      <wsdl:output message="tns:GetCitizenByAadhaarOutput"/>
+    </wsdl:operation>
+  </wsdl:portType>
+
+  <!-- ================= BINDING (SOAP 1.1 with WS-Security Requirement) ================= -->
+  <wsdl:binding name="EmploymentDepartmentSoapBinding" type="tns:EmploymentDepartmentPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+    <wsdl:operation name="GetAvailableJobs">
+      <soap:operation soapAction="http://employment.gov.in/interop/v1/GetAvailableJobs"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="CheckEligibility">
+      <soap:operation soapAction="http://employment.gov.in/interop/v1/CheckEligibility"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="ApplyForJob">
+      <soap:operation soapAction="http://employment.gov.in/interop/v1/ApplyForJob"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetApplicationStatus">
+      <soap:operation soapAction="http://employment.gov.in/interop/v1/GetApplicationStatus"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+    </wsdl:operation>
+
+    <wsdl:operation name="GetCitizenByAadhaar">
+      <soap:operation soapAction="http://employment.gov.in/interop/v1/GetCitizenByAadhaar"/>
+      <wsdl:input><soap:body use="literal"/></wsdl:input>
+      <wsdl:output><soap:body use="literal"/></wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <!-- ================= SERVICE ================= -->
+  <wsdl:service name="EmploymentDepartmentService">
+    <wsdl:documentation>Official SOAP 1.1 Web Service for State Employment Department with WS-Security</wsdl:documentation>
+    <wsdl:port name="EmploymentDepartmentPort" binding="tns:EmploymentDepartmentSoapBinding">
+      <soap:address location="http://localhost:3000/soap/employment"/>
+    </wsdl:port>
+  </wsdl:service>
+
+</wsdl:definitions>

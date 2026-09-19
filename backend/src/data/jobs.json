@@ -1,0 +1,782 @@
+[
+  {
+    "id": "JOB-GOV-2026-01",
+    "title": "District Data Operations Officer",
+    "department": "Department of Employment & e-Governance",
+    "category": "Technology & Administrative",
+    "vacancies": 25,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 21700 - 69100 (Level 3)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 0,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 30,
+      "minEducation": "B.Tech Computer Science or equivalent",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Advanced Python & Data Processing",
+        "category": "Technology & Administrative",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-01",
+    "deadline": "2026-11-01",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-02",
+    "title": "Solar Energy Technical Associate",
+    "department": "Renewable Energy & Employment Mission",
+    "category": "Technical & Renewable Energy",
+    "vacancies": 32,
+    "location": "Regional Government Offices",
+    "payScale": "INR 24200 - 75300 (Level 4)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 1,
+    "eligibility": {
+      "minAge": 19,
+      "maxAge": 31,
+      "minEducation": "Diploma in Electrical Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Solar PV Installation & Maintenance",
+        "category": "Technical & Renewable Energy",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-02",
+    "deadline": "2026-12-02",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-03",
+    "title": "Public Healthcare Digital Coordinator",
+    "department": "Health & Family Welfare Mission",
+    "category": "Healthcare Support",
+    "vacancies": 39,
+    "location": "District Government Offices",
+    "payScale": "INR 26700 - 81500 (Level 5)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 2,
+    "eligibility": {
+      "minAge": 20,
+      "maxAge": 32,
+      "minEducation": "Higher Secondary with Science",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Healthcare Informatics & Digital Health",
+        "category": "Healthcare Support",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-03",
+    "deadline": "2026-11-03",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-04",
+    "title": "Gram Panchayat Digital Assistant",
+    "department": "Panchayati Raj & Rural Employment Bureau",
+    "category": "Rural e-Services",
+    "vacancies": 46,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 29200 - 87700 (Level 6)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 3,
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 33,
+      "minEducation": "Higher Secondary in any discipline",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Financial Accounting & e-Governance",
+        "category": "Rural e-Services",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-04",
+    "deadline": "2026-12-04",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-05",
+    "title": "Employment Exchange Data Analyst",
+    "department": "State Employment Directorate",
+    "category": "Data & Analytics",
+    "vacancies": 53,
+    "location": "Regional Government Offices",
+    "payScale": "INR 31700 - 93900 (Level 7)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 0,
+    "eligibility": {
+      "minAge": 22,
+      "maxAge": 34,
+      "minEducation": "Bachelor Degree in Statistics or IT",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Data Analytics & Visualization",
+        "category": "Data & Analytics",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-05",
+    "deadline": "2026-11-05",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-06",
+    "title": "Water Resources Survey Assistant",
+    "department": "Water Resources Department",
+    "category": "Environment & Infrastructure",
+    "vacancies": 60,
+    "location": "District Government Offices",
+    "payScale": "INR 21700 - 69100 (Level 3)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 1,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 35,
+      "minEducation": "Diploma in Civil Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "GIS Survey & Water Mapping",
+        "category": "Environment & Infrastructure",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-06",
+    "deadline": "2026-12-06",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-07",
+    "title": "Public Works Junior Engineer",
+    "department": "Public Works Department",
+    "category": "Infrastructure",
+    "vacancies": 67,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 24200 - 75300 (Level 4)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 2,
+    "eligibility": {
+      "minAge": 19,
+      "maxAge": 36,
+      "minEducation": "Diploma in Civil Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Construction Safety & Quality",
+        "category": "Infrastructure",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-07",
+    "deadline": "2026-11-07",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-08",
+    "title": "Agriculture Extension Coordinator",
+    "department": "Department of Agriculture",
+    "category": "Agriculture & Rural Development",
+    "vacancies": 74,
+    "location": "Regional Government Offices",
+    "payScale": "INR 26700 - 81500 (Level 5)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 3,
+    "eligibility": {
+      "minAge": 20,
+      "maxAge": 37,
+      "minEducation": "B.Sc Agriculture or equivalent",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Sustainable Agriculture Practices",
+        "category": "Agriculture & Rural Development",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-08",
+    "deadline": "2026-12-08",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-09",
+    "title": "Forest Conservation Field Officer",
+    "department": "Forest Department",
+    "category": "Environment & Forestry",
+    "vacancies": 81,
+    "location": "District Government Offices",
+    "payScale": "INR 29200 - 87700 (Level 6)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 0,
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 38,
+      "minEducation": "Bachelor Degree in Environmental Science",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Biodiversity Conservation",
+        "category": "Environment & Forestry",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-09",
+    "deadline": "2026-11-09",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-10",
+    "title": "Municipal Revenue Assistant",
+    "department": "Urban Development Department",
+    "category": "Urban Administration",
+    "vacancies": 88,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 31700 - 93900 (Level 7)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 1,
+    "eligibility": {
+      "minAge": 22,
+      "maxAge": 30,
+      "minEducation": "Bachelor Degree in Commerce",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Digital Records & Tax Administration",
+        "category": "Urban Administration",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-10",
+    "deadline": "2026-12-10",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-11",
+    "title": "District Data Operations Officer - Zone 1",
+    "department": "Department of Employment & e-Governance",
+    "category": "Technology & Administrative",
+    "vacancies": 95,
+    "location": "Regional Government Offices",
+    "payScale": "INR 21700 - 69100 (Level 3)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 2,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 31,
+      "minEducation": "B.Tech Computer Science or equivalent",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Advanced Python & Data Processing",
+        "category": "Technology & Administrative",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-11",
+    "deadline": "2026-11-11",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-12",
+    "title": "Solar Energy Technical Associate - Zone 2",
+    "department": "Renewable Energy & Employment Mission",
+    "category": "Technical & Renewable Energy",
+    "vacancies": 102,
+    "location": "District Government Offices",
+    "payScale": "INR 24200 - 75300 (Level 4)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 3,
+    "eligibility": {
+      "minAge": 19,
+      "maxAge": 32,
+      "minEducation": "Diploma in Electrical Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Solar PV Installation & Maintenance",
+        "category": "Technical & Renewable Energy",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-12",
+    "deadline": "2026-12-12",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-13",
+    "title": "Public Healthcare Digital Coordinator - Zone 3",
+    "department": "Health & Family Welfare Mission",
+    "category": "Healthcare Support",
+    "vacancies": 109,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 26700 - 81500 (Level 5)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 0,
+    "eligibility": {
+      "minAge": 20,
+      "maxAge": 33,
+      "minEducation": "Higher Secondary with Science",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Healthcare Informatics & Digital Health",
+        "category": "Healthcare Support",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-13",
+    "deadline": "2026-11-13",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-14",
+    "title": "Gram Panchayat Digital Assistant - Zone 4",
+    "department": "Panchayati Raj & Rural Employment Bureau",
+    "category": "Rural e-Services",
+    "vacancies": 116,
+    "location": "Regional Government Offices",
+    "payScale": "INR 29200 - 87700 (Level 6)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 1,
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 34,
+      "minEducation": "Higher Secondary in any discipline",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Financial Accounting & e-Governance",
+        "category": "Rural e-Services",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-14",
+    "deadline": "2026-12-14",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-15",
+    "title": "Employment Exchange Data Analyst - Zone 5",
+    "department": "State Employment Directorate",
+    "category": "Data & Analytics",
+    "vacancies": 123,
+    "location": "District Government Offices",
+    "payScale": "INR 31700 - 93900 (Level 7)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 2,
+    "eligibility": {
+      "minAge": 22,
+      "maxAge": 35,
+      "minEducation": "Bachelor Degree in Statistics or IT",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Data Analytics & Visualization",
+        "category": "Data & Analytics",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-15",
+    "deadline": "2026-11-15",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-16",
+    "title": "Water Resources Survey Assistant - Zone 1",
+    "department": "Water Resources Department",
+    "category": "Environment & Infrastructure",
+    "vacancies": 130,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 21700 - 69100 (Level 3)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 3,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 36,
+      "minEducation": "Diploma in Civil Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "GIS Survey & Water Mapping",
+        "category": "Environment & Infrastructure",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-16",
+    "deadline": "2026-12-16",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-17",
+    "title": "Public Works Junior Engineer - Zone 2",
+    "department": "Public Works Department",
+    "category": "Infrastructure",
+    "vacancies": 137,
+    "location": "Regional Government Offices",
+    "payScale": "INR 24200 - 75300 (Level 4)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 0,
+    "eligibility": {
+      "minAge": 19,
+      "maxAge": 37,
+      "minEducation": "Diploma in Civil Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Construction Safety & Quality",
+        "category": "Infrastructure",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-17",
+    "deadline": "2026-11-17",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-18",
+    "title": "Agriculture Extension Coordinator - Zone 3",
+    "department": "Department of Agriculture",
+    "category": "Agriculture & Rural Development",
+    "vacancies": 144,
+    "location": "District Government Offices",
+    "payScale": "INR 26700 - 81500 (Level 5)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 1,
+    "eligibility": {
+      "minAge": 20,
+      "maxAge": 38,
+      "minEducation": "B.Sc Agriculture or equivalent",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Sustainable Agriculture Practices",
+        "category": "Agriculture & Rural Development",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-18",
+    "deadline": "2026-12-18",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-19",
+    "title": "Forest Conservation Field Officer - Zone 4",
+    "department": "Forest Department",
+    "category": "Environment & Forestry",
+    "vacancies": 151,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 29200 - 87700 (Level 6)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 2,
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 30,
+      "minEducation": "Bachelor Degree in Environmental Science",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Biodiversity Conservation",
+        "category": "Environment & Forestry",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-19",
+    "deadline": "2026-11-19",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-20",
+    "title": "Municipal Revenue Assistant - Zone 5",
+    "department": "Urban Development Department",
+    "category": "Urban Administration",
+    "vacancies": 158,
+    "location": "Regional Government Offices",
+    "payScale": "INR 31700 - 93900 (Level 7)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 3,
+    "eligibility": {
+      "minAge": 22,
+      "maxAge": 31,
+      "minEducation": "Bachelor Degree in Commerce",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Digital Records & Tax Administration",
+        "category": "Urban Administration",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-20",
+    "deadline": "2026-12-20",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-21",
+    "title": "District Data Operations Officer - Zone 1",
+    "department": "Department of Employment & e-Governance",
+    "category": "Technology & Administrative",
+    "vacancies": 165,
+    "location": "District Government Offices",
+    "payScale": "INR 21700 - 69100 (Level 3)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 0,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 32,
+      "minEducation": "B.Tech Computer Science or equivalent",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Advanced Python & Data Processing",
+        "category": "Technology & Administrative",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-01",
+    "deadline": "2026-11-21",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-22",
+    "title": "Solar Energy Technical Associate - Zone 2",
+    "department": "Renewable Energy & Employment Mission",
+    "category": "Technical & Renewable Energy",
+    "vacancies": 172,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 24200 - 75300 (Level 4)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 1,
+    "eligibility": {
+      "minAge": 19,
+      "maxAge": 33,
+      "minEducation": "Diploma in Electrical Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Solar PV Installation & Maintenance",
+        "category": "Technical & Renewable Energy",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-02",
+    "deadline": "2026-12-22",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-23",
+    "title": "Public Healthcare Digital Coordinator - Zone 3",
+    "department": "Health & Family Welfare Mission",
+    "category": "Healthcare Support",
+    "vacancies": 179,
+    "location": "Regional Government Offices",
+    "payScale": "INR 26700 - 81500 (Level 5)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 2,
+    "eligibility": {
+      "minAge": 20,
+      "maxAge": 34,
+      "minEducation": "Higher Secondary with Science",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Healthcare Informatics & Digital Health",
+        "category": "Healthcare Support",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-03",
+    "deadline": "2026-11-23",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-24",
+    "title": "Gram Panchayat Digital Assistant - Zone 4",
+    "department": "Panchayati Raj & Rural Employment Bureau",
+    "category": "Rural e-Services",
+    "vacancies": 186,
+    "location": "District Government Offices",
+    "payScale": "INR 29200 - 87700 (Level 6)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 3,
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 35,
+      "minEducation": "Higher Secondary in any discipline",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Financial Accounting & e-Governance",
+        "category": "Rural e-Services",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-04",
+    "deadline": "2026-12-24",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-25",
+    "title": "Employment Exchange Data Analyst - Zone 5",
+    "department": "State Employment Directorate",
+    "category": "Data & Analytics",
+    "vacancies": 193,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 31700 - 93900 (Level 7)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 0,
+    "eligibility": {
+      "minAge": 22,
+      "maxAge": 36,
+      "minEducation": "Bachelor Degree in Statistics or IT",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Data Analytics & Visualization",
+        "category": "Data & Analytics",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-05",
+    "deadline": "2026-11-25",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-26",
+    "title": "Water Resources Survey Assistant - Zone 1",
+    "department": "Water Resources Department",
+    "category": "Environment & Infrastructure",
+    "vacancies": 200,
+    "location": "Regional Government Offices",
+    "payScale": "INR 21700 - 69100 (Level 3)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 1,
+    "eligibility": {
+      "minAge": 18,
+      "maxAge": 37,
+      "minEducation": "Diploma in Civil Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "GIS Survey & Water Mapping",
+        "category": "Environment & Infrastructure",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-06",
+    "deadline": "2026-12-01",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-27",
+    "title": "Public Works Junior Engineer - Zone 2",
+    "department": "Public Works Department",
+    "category": "Infrastructure",
+    "vacancies": 27,
+    "location": "District Government Offices",
+    "payScale": "INR 24200 - 75300 (Level 4)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 2,
+    "eligibility": {
+      "minAge": 19,
+      "maxAge": 38,
+      "minEducation": "Diploma in Civil Engineering",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Construction Safety & Quality",
+        "category": "Infrastructure",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-07",
+    "deadline": "2026-11-02",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-28",
+    "title": "Agriculture Extension Coordinator - Zone 3",
+    "department": "Department of Agriculture",
+    "category": "Agriculture & Rural Development",
+    "vacancies": 34,
+    "location": "Statewide Government Offices",
+    "payScale": "INR 26700 - 81500 (Level 5)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 3,
+    "eligibility": {
+      "minAge": 20,
+      "maxAge": 30,
+      "minEducation": "B.Sc Agriculture or equivalent",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Sustainable Agriculture Practices",
+        "category": "Agriculture & Rural Development",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-08",
+    "deadline": "2026-12-03",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-29",
+    "title": "Forest Conservation Field Officer - Zone 4",
+    "department": "Forest Department",
+    "category": "Environment & Forestry",
+    "vacancies": 41,
+    "location": "Regional Government Offices",
+    "payScale": "INR 29200 - 87700 (Level 6)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 0,
+    "eligibility": {
+      "minAge": 21,
+      "maxAge": 31,
+      "minEducation": "Bachelor Degree in Environmental Science",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Biodiversity Conservation",
+        "category": "Environment & Forestry",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-09",
+    "deadline": "2026-11-04",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "JOB-GOV-2026-30",
+    "title": "Municipal Revenue Assistant - Zone 5",
+    "department": "Urban Development Department",
+    "category": "Urban Administration",
+    "vacancies": 48,
+    "location": "District Government Offices",
+    "payScale": "INR 31700 - 93900 (Level 7)",
+    "description": "Support public service delivery, citizen records, departmental coordination, and employment program operations in assigned government offices.",
+    "experienceRequiredYears": 1,
+    "eligibility": {
+      "minAge": 22,
+      "maxAge": 32,
+      "minEducation": "Bachelor Degree in Commerce",
+      "mandatorySkillCertificate": {
+        "required": true,
+        "name": "Digital Records & Tax Administration",
+        "category": "Urban Administration",
+        "issuingAuthority": "State Skill Development Board"
+      },
+      "aadhaarRequired": true
+    },
+    "postedDate": "2026-09-10",
+    "deadline": "2026-12-05",
+    "status": "ACTIVE"
+  }
+]
