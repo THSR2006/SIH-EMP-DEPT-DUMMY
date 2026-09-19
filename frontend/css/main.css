@@ -557,12 +557,9 @@ main {
 .kv dd {
   margin: 0;
 
-<<<<<<< HEAD
   min-width: 0;
   overflow-wrap: anywhere;
 
-=======
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   font-weight: 600;
 }
 

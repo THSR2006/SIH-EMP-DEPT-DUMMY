@@ -1,20 +1,5 @@
 [
   {
-<<<<<<< HEAD
-=======
-    "id": "LOG-1789824222201-b370",
-    "timestamp": "2026-09-19T13:23:42.201Z",
-    "operation": "ApplyForJob",
-    "protocol": "SOAP 1.1 + OASIS WS-Security",
-    "authStatus": "AUTHORIZED",
-    "authenticatedUser": "INTEROP_GATEWAY_SERVICE",
-    "httpStatus": 200,
-    "rawRequestSnippet": "<?xml version=\"\"1.0\"\" encoding=\"\"UTF-8\"\"?>\n<soapenv:Envelope xmlns:soapenv=\"\"http://schemas.xmlsoap.org/soap/envelope/\"\" xmlns:wsse=\"\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\"\" xmlns:wsu=\"\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\"\" xmlns:emp=\"\"http://employment.gov.in/interop/v1\"\">\n  <soapenv:Header>\n    <wsse:Security soapenv:mustUnderstand=\"\"1\">\n      <wsse:UsernameToken wsu:Id=\"\"UsernameToken-PDF-1\">\n        <wsse:Username>INTEROP_GATEWAY_SERVICE</wsse:Username>\n        <wsse:Password Type=\"\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText\"\">GovInterop@Secret#2026</wsse:Password>\n        <wsse:Nonce>YzRiMWMzY2EtMTRiNS00OGRlLTgyMDAtOWM2YmMyOTRhZDU3</wsse:Nonce>\n        <wsu:Created>2026-09-19T13:23:42.160Z</wsu:Created>\n      </wsse:UsernameToken>\n    </wsse:Security>\n  </soapenv:Header>\n  <soapenv:Body>\n    <emp:ApplyForJobRequest>\n      <emp:JobId>JOB-GOV-2026-01</emp:JobId>\n      <emp:Citizen>\n        <emp:AadhaarNumber>901234567890</emp:AadhaarNumber>\n        <emp:FullName>Potli Enosh Kumar Reddy</emp:FullName>\n        <emp:FatherName>Dummy Parent</emp:FatherName>\n        <emp:DateOfBirth>2000-05-14</emp:DateOfBirth>\n        <emp:Gender>Male</emp:Gender>\n        <emp:Email>24ucs120@dummy.gov.in</emp:Email>\n        <emp:Phone>+919900001120</emp:Phone>\n        <emp:Address>Government Student Residence</emp:Address>\n        <emp:PinCode>500001</emp:PinCode>\n        <emp:HighestQualification>B.Tech Computer Science</emp:HighestQualification>\n      </emp:Citizen>\n      <emp:EducationDeptVerification>\n        <emp:CertificateNumber>OS-LAB-24UCS120-2026</emp:CertificateNumber>\n        <emp:CourseName>Advanced Python &amp; Data Processing</emp:CourseName>\n        <emp:IssuingAuthority>State Skill Development Board</emp:IssuingAuthority>\n        <emp:IssueDate>2026-09-18</emp:IssueDate>\n        <emp:Grade>A+</emp:Grade>\n        <emp:Status>V...[truncated]",
-    "rawResponseSnippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"\n                  xmlns:emp=\"http://employment.gov.in/interop/v1\">\n  <soapenv:Header/>\n  <soapenv:Body>\n\n    <emp:ApplyForJobResponse>\n      <emp:Status>APPROVED_AND_REGISTERED</emp:Status>\n      <emp:ApplicationNumber>EMP-SSO-222198</emp:ApplicationNumber>\n      <emp:JobId>JOB-GOV-2026-01</emp:JobId>\n      <emp:JobTitle>District Data Operations Officer</emp:JobTitle>\n      <emp:CandidateName>Potli Enosh Kumar Reddy</emp:CandidateName>\n      <emp:MaskedAadhaar>XXXX-XXXX-7890</emp:MaskedAadhaar>\n      <emp:SkillCertificateVerified>true</emp:SkillCertificateVerified>\n      <emp:CertificatePdfReceived>true</emp:CertificatePdfReceived>\n      <emp:CertificateFileName>OS_Experiment_4_24UCS120_Potli_Enosh_Kumar_Reddy.pdf</emp:CertificateFileName>\n      <emp:SubmissionTimestamp>2026-09-19T13:23:42.200Z</emp:SubmissionTimestamp>\n      <emp:Mode>SSO_INTEROPERABILITY_GATEWAY</emp:Mode>\n      <emp:Message>Job application successfully received and verified over SOAP with WS-Security via Interoperability Gateway.</emp:Message>\n    </emp:ApplyForJobResponse>\n  </soapenv:Body>\n</soapenv:Envelope>",
-    "latencyMs": 7
-  },
-  {
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
     "id": "LOG-DUMMY-001",
     "timestamp": "2026-09-01T10:15:00.000Z",
     "operation": "GetAvailableJobs",
@@ -254,8 +239,4 @@
     "rawResponseSnippet": "<soapenv:Envelope><!-- dummy successful response --></soapenv:Envelope>",
     "latencyMs": 3
   }
-<<<<<<< HEAD
 ]
-=======
-]
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60

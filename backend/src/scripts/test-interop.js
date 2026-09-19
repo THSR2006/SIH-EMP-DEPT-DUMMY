@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 import 'dotenv/config';
 import { buildWSSecurityHeader } from '../soap/wsSecurity.js';
 
 const BASE_URL = process.env.TEST_BASE_URL || `http://127.0.0.1:${process.env.PORT || 3000}`;
-=======
-import { buildWSSecurityHeader } from '../soap/wsSecurity.js';
-
-const BASE_URL = 'http://127.0.0.1:3000';
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
 
 async function runTests() {
   console.log('--- STARTING EMPLOYMENT DEPARTMENT FULL INTEROP SUITE ---\n');
@@ -55,7 +49,6 @@ async function runTests() {
     console.error('   ❌ Unexpected response for missing security:', unauthRes.status, unauthXml);
   }
 
-<<<<<<< HEAD
   // Test 4: SOAP Call with invalid WS-Security credentials
   console.log('\n4. Testing SOAP Call with Invalid WS-Security Credentials...');
   const invalidSecHeader = buildWSSecurityHeader('INTEROP_GATEWAY_SERVICE', 'WrongPassword123');
@@ -79,10 +72,6 @@ async function runTests() {
 
   // Test 5: SOAP Call with Valid WS-Security (GetAvailableJobs)
   console.log('\n5. Testing SOAP Call with Valid WS-Security (GetAvailableJobs)...');
-=======
-  // Test 4: SOAP Call with Valid WS-Security (GetAvailableJobs)
-  console.log('\n4. Testing SOAP Call with Valid WS-Security (GetAvailableJobs)...');
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   const validSecHeader = buildWSSecurityHeader('INTEROP_GATEWAY_SERVICE', 'GovInterop@Secret#2026');
   const getJobsEnvelope = `<?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -106,13 +95,8 @@ async function runTests() {
     console.error('   ❌ SOAP GetAvailableJobs failed:', soapJobsRes.status, soapJobsXml);
   }
 
-<<<<<<< HEAD
   // Test 6: SOAP Query Citizen By Aadhaar (GetCitizenByAadhaar)
   console.log('\n6. Testing SOAP Call: GetCitizenByAadhaar over WS-Security...');
-=======
-  // Test 5: SOAP Query Citizen By Aadhaar (GetCitizenByAadhaar)
-  console.log('\n5. Testing SOAP Call: GetCitizenByAadhaar over WS-Security...');
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   const getCitizenSoapEnvelope = `<?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
                   xmlns:emp="http://employment.gov.in/interop/v1">
@@ -120,11 +104,7 @@ async function runTests() {
   </soapenv:Header>
   <soapenv:Body>
     <emp:GetCitizenByAadhaarRequest>
-<<<<<<< HEAD
       <emp:AadhaarNumber>900000000001</emp:AadhaarNumber>
-=======
-      <emp:AadhaarNumber>999912345678</emp:AadhaarNumber>
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
     </emp:GetCitizenByAadhaarRequest>
   </soapenv:Body>
 </soapenv:Envelope>`;
@@ -141,7 +121,6 @@ async function runTests() {
     console.error('   ❌ SOAP GetCitizenByAadhaar failed:', getCitRes.status, getCitXml);
   }
 
-<<<<<<< HEAD
   // Test 7: SOAP Eligibility Check
   console.log('\n7. Testing SOAP Call: CheckEligibility over WS-Security...');
   const checkEligibilityEnvelope = `<?xml version="1.0" encoding="UTF-8"?>
@@ -170,10 +149,6 @@ async function runTests() {
 
   // Test 8: SOAP Interoperability Application Submission (ApplyForJob)
   console.log('\n8. Testing Interoperability Flow: SOAP ApplyForJob with Education Dept Skill Certificate...');
-=======
-  // Test 6: SOAP Interoperability Application Submission (ApplyForJob)
-  console.log('\n6. Testing Interoperability Flow: SOAP ApplyForJob with Education Dept Skill Certificate...');
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   const testAadhaar = `9999${Date.now().toString().slice(-8)}`;
   const applySoapEnvelope = `<?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -214,24 +189,16 @@ async function runTests() {
     body: applySoapEnvelope
   });
   const applyXml = await applyRes.text();
-<<<<<<< HEAD
   let applicationNumber = '';
   if (applyRes.ok && applyXml.includes('<emp:Status>APPROVED_AND_REGISTERED</emp:Status>')) {
     console.log('   ✅ SOAP ApplyForJob succeeded with automatic certificate verification!');
     const match = applyXml.match(/<emp:ApplicationNumber>(.*?)<\/emp:ApplicationNumber>/);
     applicationNumber = match ? match[1] : '';
     console.log(`      Generated Application Number: ${applicationNumber || 'N/A'}`);
-=======
-  if (applyRes.ok && applyXml.includes('<emp:Status>APPROVED_AND_REGISTERED</emp:Status>')) {
-    console.log('   ✅ SOAP ApplyForJob succeeded with automatic certificate verification!');
-    const match = applyXml.match(/<emp:ApplicationNumber>(.*?)<\/emp:ApplicationNumber>/);
-    console.log(`      Generated Application Number: ${match ? match[1] : 'N/A'}`);
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   } else {
     console.error('   ❌ SOAP ApplyForJob failed:', applyRes.status, applyXml);
   }
 
-<<<<<<< HEAD
   // Test 9: SOAP Application Status
   console.log('\n9. Testing SOAP Call: GetApplicationStatus over WS-Security...');
   const statusEnvelope = `<?xml version="1.0" encoding="UTF-8"?>
@@ -252,8 +219,6 @@ async function runTests() {
     console.error('   ❌ SOAP GetApplicationStatus failed:', statusRes.status, statusXml);
   }
 
-=======
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   // Test 7: REST API Citizens Registry - Aadhaar, Name, and Range Queries
   console.log('\n7. Testing Citizen Query APIs for Master Website:');
   // 7a. By Aadhaar direct endpoint
@@ -300,14 +265,10 @@ async function runTests() {
       educationCertificate: {
         certificateNumber: 'MANUAL-UNVERIFIED-1234',
         courseName: 'Solar PV Installation & Maintenance',
-<<<<<<< HEAD
         issuingAuthority: 'Self-Uploaded Certificate PDF',
         certificateFileName: 'manual-certificate.pdf',
         certificateMimeType: 'application/pdf',
         certificatePdfBase64: Buffer.from('%PDF-1.4\nDummy manual certificate\n%%EOF').toString('base64')
-=======
-        issuingAuthority: 'Self-Uploaded Certificate PDF'
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
       }
     })
   });

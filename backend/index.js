@@ -7,20 +7,13 @@ import { renderAdminDashboardHtml } from './src/views/adminDashboard.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-<<<<<<< HEAD
 const HOST = process.env.HOST || '0.0.0.0';
-=======
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
 
 // Enable CORS for frontend and master application interoperability
 app.use(
   cors({
     origin: '*',
-<<<<<<< HEAD
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-=======
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
     allowedHeaders: ['Content-Type', 'Authorization', 'SOAPAction', 'X-Requested-With']
   })
 );
@@ -35,11 +28,7 @@ app.use(
 );
 
 // JSON body parser for REST APIs
-<<<<<<< HEAD
 app.use(express.json({ limit: '6mb' }));
-=======
-app.use(express.json());
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
 app.use(express.urlencoded({ extended: true }));
 
 // ================= SOAP ENDPOINTS =================
@@ -129,11 +118,7 @@ app.get('/', (req, res) => {
 });
 
 // Start Server
-<<<<<<< HEAD
 app.listen(PORT, HOST, () => {
-=======
-app.listen(PORT, () => {
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   console.log(`=======================================================`);
   console.log(`🏛️  Employment Department Backend Server is RUNNING`);
   console.log(`📡  Port: ${PORT}`);

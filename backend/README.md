@@ -1,6 +1,5 @@
 # SOAP API Operations
 
-<<<<<<< HEAD
 ## Run Locally or Across a LAN
 
 Copy `backend/.env-example` to `backend/.env` and choose any free backend port. Copy `frontend/.env-example` to `frontend/.env` and choose any free frontend port plus the matching backend URL.
@@ -13,8 +12,6 @@ When the frontend is opened from another laptop, set `VITE_API_TARGET=http://<BA
 
 A `404` from `http://localhost:3000/api/jobs` means the backend process or route is not running on that machine. A `404` only from `http://localhost:5173/api/jobs` means the frontend proxy or frontend startup mode is wrong.
 
-=======
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
 The Employment Department exposes the following SOAP 1.1 operations through:
 
 ```text

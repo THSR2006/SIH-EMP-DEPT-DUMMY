@@ -190,7 +190,6 @@ export function renderAdminDashboardHtml(port = 3000) {
     }
 
     .pill { background: #1e293b; padding: 2px 8px; border-radius: 4px; font-family: monospace; font-size: 12px; }
-<<<<<<< HEAD
 
     /* Match the public department portal visual language. */
     :root {
@@ -302,11 +301,6 @@ export function renderAdminDashboardHtml(port = 3000) {
       <span>Interoperability monitoring service</span>
     </div>
   </div>
-=======
-  </style>
-</head>
-<body>
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   <div class="container">
     <header>
       <div class="brand">
@@ -458,7 +452,6 @@ export function renderAdminDashboardHtml(port = 3000) {
 
   </div>
 
-<<<<<<< HEAD
   <footer class="admin-footer">
     <div class="admin-footer-inner">
       <span>Government of Maharashtra | State Employment Department</span>
@@ -467,8 +460,6 @@ export function renderAdminDashboardHtml(port = 3000) {
     </div>
   </footer>
 
-=======
->>>>>>> cd9cdf984cb5635a9c39228831ac99cd99639a60
   <script>
     let allCitizens = [];
 
